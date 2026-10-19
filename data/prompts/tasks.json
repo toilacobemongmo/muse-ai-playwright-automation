@@ -1,0 +1,21 @@
+[
+  {
+    "id": "task-001",
+    "prompt": "Summarize the core principles of Playwright in three bullet points."
+  },
+  {
+    "id": "task-002",
+    "prompt": "Write a TypeScript debounce function with cancellation support.",
+    "metadata": {
+      "category": "code",
+      "language": "typescript"
+    }
+  },
+  {
+    "id": "task-003",
+    "prompt": "Explain the Node.js event loop with a diagram in markdown.",
+    "metadata": {
+      "category": "education"
+    }
+  }
+]

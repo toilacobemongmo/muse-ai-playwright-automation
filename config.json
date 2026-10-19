@@ -1,0 +1,74 @@
+{
+  "browser": {
+    "headless": false,
+    "slowMo": 0,
+    "devtools": false,
+    "defaultViewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-blink-features=AutomationControlled",
+      "--disable-accelerated-2d-canvas",
+      "--disable-gpu",
+      "--window-size=1280,800"
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+  },
+  "timeouts": {
+    "navigation": 45000,
+    "elementWait": 15000,
+    "action": 8000,
+    "streamResponse": 120000
+  },
+  "delays": {
+    "typing": {
+      "min": 40,
+      "max": 120
+    },
+    "action": {
+      "min": 500,
+      "max": 1500
+    },
+    "step": {
+      "min": 1000,
+      "max": 2500
+    }
+  },
+  "paths": {
+    "promptsDir": "./data/prompts",
+    "outputDir": "./data/outputs",
+    "downloadsDir": "./data/downloads",
+    "authSessionFile": "./data/auth/session.json",
+    "logsDir": "./data/logs"
+  },
+  "selectors": {
+    "auth": {
+      "usernameInput": "input[type='email'], input[name='username']",
+      "passwordInput": "input[type='password']",
+      "submitButton": "button[type='submit']",
+      "sessionCheck": "div[data-testid='user-profile'], .user-avatar"
+    },
+    "chat": {
+      "promptTextarea": "textarea[data-id='root'], textarea#prompt-textarea, div[contenteditable='true']",
+      "sendButton": "button[data-testid='send-button'], button[aria-label='Send prompt']",
+      "stopButton": "button[aria-label='Stop generating'], button[data-testid='stop-button']",
+      "lastResponse": "div.agent-turn:last-child div.markdown, div[data-message-author-role='assistant']:last-child",
+      "regenerateButton": "button[data-testid='regenerate-button']"
+    },
+    "indicators": {
+      "loadingSpinner": ".loading-spinner, [aria-busy='true']",
+      "errorMessage": "div.error-banner, div[role='alert']"
+    }
+  },
+  "retryPolicies": {
+    "maxRetries": 3,
+    "baseDelayMs": 2000,
+    "maxDelayMs": 15000,
+    "backoffFactor": 2,
+    "retryableStatusCodes": [408, 429, 500, 502, 503, 504]
+  }
+}

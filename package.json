@@ -1,0 +1,32 @@
+{
+  "name": "muse-ai-playwright-automation",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright automation for web scraping with session management, anti-detection, and queue processing",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "node src/index.js --dry-run",
+    "clean:logs": "node -e \"require('fs').rmSync('logs', {recursive:true, force:true})\"",
+    "clean:downloads": "node -e \"require('fs').rmSync('downloads', {recursive:true, force:true})\"",
+    "clean:all": "npm run clean:logs && npm run clean:downloads"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "web-scraping",
+    "browser-automation",
+    "task-queue",
+    "anti-detection"
+  ],
+  "author": "Swarm Workers",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.42.1",
+    "@modelcontextprotocol/sdk": "^0.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

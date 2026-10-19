@@ -1,0 +1,7 @@
+Write a detailed technical explanation of how React reconciliation works.
+Generate a Python script that reads a CSV file and computes summary statistics.
+Explain the differences between REST and GraphQL APIs with practical examples.
+Create a SQL query that finds the top 10 customers by revenue in the last 30 days.
+Describe the CAP theorem and how it influences distributed database design.
+Write a TypeScript function that debounces an async callback with cancellation support.
+Explain how browser cookies, localStorage, and sessionStorage differ in scope and lifetime.

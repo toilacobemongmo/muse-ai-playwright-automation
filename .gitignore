@@ -1,0 +1,13 @@
+node_modules/
+.env
+data/auth/*
+!data/auth/.gitkeep
+data/downloads/*
+!data/downloads/.gitkeep
+data/logs/*
+!data/logs/.gitkeep
+data/outputs/*
+!data/outputs/.gitkeep
+*.log
+.DS_Store
+*.tmp

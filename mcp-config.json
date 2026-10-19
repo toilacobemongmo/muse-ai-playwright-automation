@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "muse-ai-automation": {
+      "command": "node",
+      "args": ["src/mcp-server.js"],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
